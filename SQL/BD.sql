@@ -6,6 +6,7 @@ resolverlo juntos para llegar a un acuerdo; cualquier onda me pueden avisar, and
 
 No he colocado los campos como NOT NULL por cualquier onda...
 */
+create database clave2;
 
 create table Departamento(
 	id_depto VARCHAR(2) primary key,
@@ -91,3 +92,6 @@ create table BoletaPagoDescuento(
 	foreign key (id_boletapago) references BoletaPago.id_boletapago,
 	foreign key (id_tiposdescuentos) references TiposDescuentos.id_tiposdescuentos;
 );
+
+insert into Genero values(1, 'Masculino');
+insert into Genero values(2, 'Femenino');
